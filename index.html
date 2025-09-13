@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamStay Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>DreamStay Hotel</h2>
+        <ul>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-text">Welcome to DreamStay</h1>
+        <p>Experience luxury and comfort like never before</p>
+        <button class="animated-btn" id="bookNowBtn">Book Now</button>
+        
+    </section>
+
+    <!-- Featured Rooms Section -->
+    <section id="rooms" class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-container">
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Room 1">
+                <h3>Deluxe Room</h3>
+                <p>Comfortable room with city view</p>
+                <button class="animated-btn book-btn">Book</button>
+            </div>
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D" alt="Room 2">
+                <h3>Luxury Suite</h3>
+                <p>Spacious suite with premium amenities</p>
+                <button class="animated-btn book-btn">Book</button>
+            </div>
+            <div class="room-card">
+                <img src="https://plus.unsplash.com/premium_photo-1661879252375-7c1db1932572?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Room 3">
+                <h3>Standard Room</h3>
+                <p>Cozy and affordable for short stays</p>
+                <button class="animated-btn book-btn">Book</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <h3>Book Your Stay</h3>
+            <form id="bookingForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="date" placeholder="Check-in Date" required>
+                <input type="date" placeholder="Check-out Date" required>
+                <button type="submit" class="animated-btn">Confirm Booking</button>
+            </form>
+            <button id="closeModal" class="animated-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
